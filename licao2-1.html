@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora de calorias</title>
+</head>
+<body>
+    <h1>tabela de calorias</h1>
+
+    <script>
+        //prato
+        let prato =prompt("Entre com um dos prato (1- Vegetariano, 2- Peixe, 3- Frango e 4- Carne)");
+        let nomePrato;
+        let caloriasComi;
+
+        switch(prato.toLowerCase()) {
+        case "1":
+        nomePrato = "Vegetariano"
+        caloriasComi = 180;
+        break;
+
+        case "2":
+        nomePrato = "Peixe" 
+        caloriasComi = 230;
+        break;
+
+        case "3":
+        nomePrato = "Frango" 
+        caloriasComi = 250;
+        break;
+
+        case "4": 
+        nomePrato = "Carne"
+        caloriasComi = 350;
+        break;
+
+        default:
+        caloriasComi = "Esse prato não existe";
+        }
+
+        document.write("A comida escolhida foi: " + nomePrato +" "+ caloriasComi+ "cal" )
+
+        //sobremesas
+        let sobremesa =prompt("Entre com um das sobremesas (1- Abacaxi, 2- Sorvete diet, 3- Mouse diel e 4- Mouse chocolate)");
+        let nomeSobre;
+        let caloriasSobre;
+
+        switch(sobremesa.toLowerCase()) {
+        case "1": 
+        nomeSobre = "Abacaxi"
+        caloriasSobre = 75;
+        break;
+
+        case "2": 
+        nomeSobre = "Sorvete diet"
+        caloriasSobre = 110;
+        break;
+
+        case "3": 
+        nomeSobre = "Mouse diet"
+        caloriasSobre = 170;
+        break;
+
+        case "4": 
+        nomeSobre = "Mouse chocolate"
+        caloriasSobre = 200;
+        break;
+
+        default:
+        caloriasSobre = "Essa sobremesa não existe";
+        }
+
+        document.write("<br>A sobremesa escolhida foi: " +nomeSobre+ " "+ caloriasSobre+ "cal" )
+
+        //bebidas
+        let bebida =prompt("Entre com uma das bebidas (1- Chá, 2- Suco de laranja, 3- Suco de melão e 4- Refrigerante diet)");
+        let nomeBebi;
+        let caloriasBebi;
+
+        switch(bebida.toLowerCase()) {
+        case "1": 
+        nomeBebi = "Chá"
+        caloriasBebi = 20;
+        break;
+
+        case "2": 
+        nomeBebi = "Suco de laranja"
+        caloriasBebi = 70;
+        break;
+
+        case "3":
+        nomeBebi = "Suco de melão"
+        caloriasBebi = 100;
+        break;
+
+        case "4": 
+        nomeBebi = "Refrigerante diet"
+        caloriasBebi = 65;
+        break;
+
+        default:
+        caloriasBebi = "Essa bebida não existe";
+        }
+
+        document.write("<br>A bebida escolhida foi: " 
+        + nomeBebi + " " +caloriasBebi+ "cal" )
+        
+    //as somas
+    let soma = (caloriasComi + caloriasSobre + caloriasBebi)
+
+    document.write("<br>Você consumiu: " + soma + "cal")
+    </script>
+    
+</body>
+</html>

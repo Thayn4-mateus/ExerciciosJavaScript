@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule Seu Crédito Especial</title>
+</head>
+<body>
+    <h1>Calcule Seu Crédito Especial</h1>
+
+    <script>
+        let saldo = parseInt(prompt("Coloque seu saldo médio"))
+        let percentual = 0
+        let juros = 0
+
+        if (saldo < 501) {
+            percentual = "0%"
+            document.write("Seu saldo: R$ " + saldo.toFixed(2))
+            document.write("<br>Nenhum crédito disponível.")
+        }
+        else if (saldo < 1001) {
+            percentual = (saldo * 0.30) 
+            juros = (percentual * 0.02)
+            document.write("Seu saldo: R$ " + saldo.toFixed(2))
+            document.write("<br>O valor do seu crédito é: R$ " + percentual.toFixed(2))
+            document.write("<br>Juros de 2% sobre o crédito: R$ " + juros.toFixed(2))
+        }
+        else if (saldo < 3001) {
+            percentual = (saldo * 0.40)
+            juros = (percentual * 0.02)
+            document.write("Seu saldo: R$ " + saldo.toFixed(2))
+            document.write("<br>O valor do seu crédito é: R$ " + percentual.toFixed(2))
+            document.write("<br>Juros de 2% sobre o crédito: R$ " + juros)
+        }
+        else {
+            percentual = (saldo * 0.50)
+            juros = (percentual * 0.02)
+            document.write("Seu saldo: R$ " + saldo.toFixed(2))
+            document.write("<br>O valor do seu crédito é: R$ " + percentual.toFixed(2))
+            document.write("<br>Juros de 2% sobre o crédito: R$ " + juros.toFixed(2))
+        }
+            
+
+
+
+    </script>
+    
+</body>
+</html>

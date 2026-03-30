@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Dolares (US$) para Real (R$) </title>
+</head>
+<body>
+
+    <h1>Conversão de Dolares (US$) para Real (R$)</h1>
+
+    <script>
+
+        let dolares = parseFloat(prompt("Digite o valor em Dólares (US$)"))
+        let cotacao = 5.26
+        let totalReal = dolares * cotacao;
+
+        document.write("Valor em dólar: US$ " + dolares.toFixed(2))
+
+        document.write("<br>Cotação informada: R$ " + cotacao.toFixed(2))
+
+        document.write("<br>Valor convertido em Real: R$ " + totalReal.toFixed(2))
+
+    </script>
+    
+</body>
+</html>

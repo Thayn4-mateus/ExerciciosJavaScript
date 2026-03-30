@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo</title>
+</head>
+<body>
+    
+    <h1>Saldo com reajuste</h1>
+    
+    <script>
+
+    let saldo = parseInt(prompt("informe o seu saldo"));
+    document.write("Seu saldo: R$ "+saldo.toFixed(2))
+    let reajuste = 0.015;
+
+    let soma = (saldo + (saldo*reajuste))
+    document.write("<br>Seu saldo com o reajuste: R$ "+soma.toFixed(2))
+    </script>
+</body>
+</html>
+
+<!--toFixed(2) serve para colocar a virgula nos dinheiros-->

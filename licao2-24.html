@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execução de numero</title>
+</head>
+<body>
+    <h1>Execução de numero</h1>
+
+<script>
+   let soma = 0;
+   let historico = "";
+
+    for (; ;) {      
+    let numero = parseInt(prompt("Digite um número (negativo para):"))
+
+        if (numero < 0) {
+         historico += "<br>Você digitou um número negativo. Encerrando...";
+        break; 
+        }else {
+         soma = soma + numero;
+         historico += "<br>Número digitado: " + numero + "Soma atual: " + soma
+        }
+    }
+
+    document.write(historico);
+    document.write("<br>A soma total final é: " + soma );
+</script>
+</body>
+</html>

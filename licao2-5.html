@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe Eleitoral</title>
+</head>
+<body>
+    <h1>classe eleitoral</h1>
+
+    <script>
+        let idade = parseInt(prompt("digite a sua idade"))
+
+        if(idade <16){
+            document.write("Não é leitor (abaixo de 16 anos)")
+        }
+         else if(idade >= 18 && idade < 65){
+            document.write("Eleitor obrigatório (entre a faixa de 18 e menor de 65 anos)")
+        }
+        else{
+            document.write("Eleitor facultativo (de 16 até 18 anos e maior de 65 anos, inclusive)")
+        }
+    </script>
+</body>
+</html>
