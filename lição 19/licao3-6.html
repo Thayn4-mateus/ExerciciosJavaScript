@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletin do Estudante</title>
+</head>
+<body>
+    <h1>Boletin do estudante</h1>
+
+    <script>
+    let aprovados = 0;
+
+    function Boletin() {
+        let nome = prompt("Digite o nome do aluno");
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "));
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "));
+
+        let media = (nota1 + nota2) / 2;
+
+        alert("Aluno: " + nome + "\nMédia: " + media);
+
+        if (media >= 9.5) {
+            alert("Aprovado!");
+            aprovados++;
+        } else {
+            alert("Reprovado!");
+        }
+
+        let dnovo = prompt("Calcular a média de outro aluno?");
+
+        if (dnovo.toUpperCase() == "S") {
+            Boletin();
+        } else if (dnovo.toUpperCase() == "N") {
+            alert("Total de aprovados: " + aprovados);
+        }
+    }
+
+    Boletin();
+    
+    </script>
+    
+</body>
+</html>

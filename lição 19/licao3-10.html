@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+
+    <script>
+        let N = parseInt(prompt("Digite até qual tabuada você quer: "));
+        let tabuada = 1;
+
+        while (tabuada <= N) {
+
+            document.write("<br>Tabuada do " + tabuada + "<br>");
+
+            let n = 1;
+
+            while (n <= 10) {
+                document.write(tabuada + " x " + n + " = " + (tabuada * n) + "<br>");
+                n++;
+            }
+
+            tabuada++;}
+    </script>
+</body>
+</html>

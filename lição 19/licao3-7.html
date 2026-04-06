@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas do aluno</title>
+</head>
+<body>
+    <h1>Notas do aluno</h1>
+
+    <script>
+        let num1 = parseFloat(prompt("Digite a primeira nota: "));
+        while (num1 < 0 || num1 > 10) {
+            alert("Nota inválida! Digite novamente.");
+            num1 = parseFloat(prompt("Digite a primrira nota: "));
+        }
+
+        let num2 = parseFloat(prompt("Digite a segunda nota: "));
+        while (num2 < 0 || num2 > 10) {
+            alert("Nota inválida! Digite novamente.");
+            num2 = parseFloat(prompt("Digite a segunda nota: "));
+        }
+
+        let num3 = parseFloat(prompt("Digite a terceira nota: "));
+        while (num3 < 0 || num3 > 10) {
+            alert("Nota inválida! Digite novamente.");
+            num3 = parseFloat(prompt("Digite a terceira nota: "));
+        }
+
+        let num4 = parseFloat(prompt("Digite a quarta nota: "));
+        while (num4 < 0 || num4 > 10) {
+            alert("Nota inválida! Digite novamente.");
+            num4 = parseFloat(prompt("Digite a quarta nota: "));
+        }
+
+        let num5 = parseFloat(prompt("Digite a quinta nota: "));
+        while (num5 < 0 || num5 > 10) {
+            alert("Nota inválida! Digite novamente.");
+            num5 = parseFloat(prompt("Digite a quinta nota: "));
+        }
+
+        let num6 = parseFloat(prompt("Digite a sexra nota: "));
+        while (num6 < 0 || num6 > 10) {
+            alert("Nota inválida! Digite novamente.");
+            num6 = parseFloat(prompt("Digite a sexta nota: "));
+        }
+
+        let media = (num1 + num2 + num3 + num4 + num5 + num6) / 6;
+
+        document.write("Média: " + media);
+    </script>
+    
+</body>
+</html>

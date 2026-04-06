@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritmética</title>
+</head>
+<body>
+    <h1>Média Aritmética</h1>
+
+    <script>
+        alert("Considere que o primeiro tem que ser menor que o segundo.")
+        let num1 = parseInt(prompt("Digite o primeiro número: "));
+        let num2 = parseInt(prompt("Digite o segundo número: "));
+
+        let soma = 0;
+        let quantidade = 0;
+
+        let n = num1;
+
+        while (n <= num2) {
+            soma = soma + n;
+            quantidade++;
+            n++;
+        }
+
+        let media = soma / quantidade;
+
+        document.write("Média: " + media);
+    </script>
+</body>
+</html>
