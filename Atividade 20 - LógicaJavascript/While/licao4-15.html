@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media da Idade</title>
+</head>
+<body>
+    <h1>Media da idade</h1>
+
+    <script>
+    let somai = 0; 
+    let somap = 0; 
+
+    while (true) {
+        let nome = prompt("Digite um nome e fim para parar a sequncia:");
+
+        
+        if (nome.toLowerCase() === "fim") {
+            break; 
+        }
+
+        let idade = parseInt(prompt("Digite uma idade:"));
+
+
+        somai = somai + idade;
+        
+
+        somap++;
+    }
+
+        let media = somai / somap;
+        document.write("A média das " + somap + " idades é: " + media.toFixed(2));
+
+    </script>
+    
+</body>
+</html>

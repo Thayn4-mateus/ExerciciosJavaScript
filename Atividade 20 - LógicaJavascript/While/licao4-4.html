@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritmética</title>
+</head>
+<body>
+    <h1>Média aritmética dos valores lidos.</h1>
+
+    <script>
+        let soma = 0;
+        let i = 1;
+
+        while (i <= 5) {
+            let num = parseInt(prompt("Digite um número:"));
+            soma = soma + num;
+            i++;
+        }
+
+        let media = soma / 5;
+
+        document.write("Média: " + media);
+
+    </script>
+    
+</body>
+</html>
