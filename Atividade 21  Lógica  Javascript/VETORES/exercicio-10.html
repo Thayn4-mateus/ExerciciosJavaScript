@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 10</title>
+</head>
+<body>
+    <!--10)Faça um programa que leia 5 números inteiros e verifique se algum deles é igual a zero.-->
+    <h1>Verificar zero</h1>
+
+    <script>
+        const numeros = []
+
+        for (let i = 1; i <= 5; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+        
+        let contN= 0;
+
+        numeros.forEach(n => {
+            if (n < 0){
+                contN++
+            }
+
+        });
+
+        document.write((numeros.join(", ")));
+        document.write("<br>"+"Negativos: " + contN);
+    </script>
+</body>
+</html>

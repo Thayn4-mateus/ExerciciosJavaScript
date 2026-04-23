@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 8</title>
+</head>
+
+<body>
+    <!-- 08) Escreva um programa que leia 5 números inteiros e calcule a média dos valores pares e a média dos valores ímpares. -->
+    <h1>Média pares e ímpares</h1>
+
+    <script>
+        const numeros = [];
+
+        for (let i = 1; i <= 5; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+
+
+        let contI = 0;
+        let contP = 0;
+
+        let somaP = 0;
+        let somaI = 0;
+
+        numeros.forEach(n => {
+            if (n % 2 === 0) {
+                somaP = + n
+                contP++;
+            }
+            else {
+                somaI = + n
+                contI++;
+            }
+        });
+
+        const mediaP = somaP / contP;
+        const mediaI = somaI / contI;
+
+        document.write("Média dos pares: " + mediaP.toFixed(2) + "<br>");
+        document.write("Média dos ímpares: " + mediaI.toFixed(2));
+
+
+
+    </script>
+</body>
+
+</html>

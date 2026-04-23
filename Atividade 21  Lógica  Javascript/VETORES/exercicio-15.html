@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 15</title>
+</head>
+
+<body>
+    <!-- 15) Crie um programa que leia 5 nomes e exiba-os em ordem alfabética. -->
+
+    <h1>Ordem alfabética</h1>
+
+    <script>
+        const nomes = [];
+
+        for (let i = 1; i <= 5; i++) {
+            const n = prompt("Digite o " + i + "° nomes:");
+            nomes.push(n);
+        }
+
+        nomes.sort((a, b) => a.localeCompare(b));
+        document.write(nomes.join(", "))
+    </script>
+</body>
+
+</html>

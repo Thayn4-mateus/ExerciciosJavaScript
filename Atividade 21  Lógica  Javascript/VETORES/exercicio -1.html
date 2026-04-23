@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 1</title>
+</head>
+
+<body>
+<!-- 01) Faça um programa que leia 5 números inteiros e exiba-os na ordem inversa em que foram digitados. -->
+    <h1>Ordem inversa</h1>
+
+    <script>
+        const numeros = [];
+
+        for (let i = 1; i <= 5; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+        numeros.reverse();
+
+        numeros.forEach(n => document.write(n + ", "));
+
+    </script>
+
+
+</body>
+
+</html>

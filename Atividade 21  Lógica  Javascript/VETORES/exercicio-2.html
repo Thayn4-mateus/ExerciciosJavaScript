@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 2</title>
+</head>
+
+<body>
+    <!-- 02) Escreva um programa que leia 10 números inteiros e exiba a soma deles. -->
+    <h1>Soma dos numeros</h1>
+
+    <script>
+        const numeros = [];
+
+        for (let i = 1; i <= 10; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+
+        numeros.reverse();
+
+        const soma = numeros.reduce((total, n) => total + n, 0);
+        document.write(soma);
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 9</title>
+</head>
+<body>
+    <!-- 09) Crie um programa que leia 10 números inteiros e exiba a quantidade de números positivos e a quantidade de números negativos. -->
+     <h1>Positivos e negativos</h1>
+
+     <script>
+        const numeros = []
+
+        for (let i = 1; i <= 10; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+         
+        let contP= 0;
+        let contN= 0;
+
+        numeros.forEach(n => {
+            if (n > 0) {
+                contP++;
+            }
+            else {
+                contN++;
+            }
+        });
+
+        document.write("Positivos: " + contP);
+        document.write("<br>"+"Negativos: " + contN);
+
+     </script>
+    
+</body>
+</html>

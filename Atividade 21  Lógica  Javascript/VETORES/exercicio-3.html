@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 3</title>
+</head>
+
+<body>
+    <!-- 03) Crie um programa que leia 7 números inteiros e exiba a média aritmética dos valores lidos. -->
+    <h1>Média dos valores</h1>
+    <script>
+        const numeros = [];
+
+        for (let i = 1; i <= 7; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+        const soma = numeros.reduce((total, n) => total + n, 0);
+        const media = soma / 7;
+        document.write(media);
+    </script>
+
+</body>
+
+</html>

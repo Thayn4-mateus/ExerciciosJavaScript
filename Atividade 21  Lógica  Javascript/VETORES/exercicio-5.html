@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 5</title>
+</head>
+
+<body>
+    <!-- 05) Escreva um programa que leia 5 números inteiros e exiba o maior e o menor valor digitado. -->
+    <h1>Maior e menor</h1>
+
+    <script>
+        const numeros = [];
+
+        for (let i = 1; i <= 5; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+
+        const maior = Math.max (...numeros);
+        const menor = Math.min (...numeros);
+
+        document.write("Maior: "+ maior + "<br>" + "Menor: " + menor);
+
+    </script>
+
+</body>
+
+</html>

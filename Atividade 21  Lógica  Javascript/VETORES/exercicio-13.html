@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 13</title>
+</head>
+
+<body>
+    <!-- 13) Faça um programa que leia 10 números inteiros e exiba quantos deles estão no intervalo de 10 a 50. -->
+    <h1>Intervalo 10 a 50</h1>
+
+    <script>
+        const numeros = [];
+
+        for (let i = 1; i <= 10; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+
+        let cont = 0;
+
+        numeros.forEach(n => {
+            if (n >= 10 && n <= 50) {
+                cont++;
+            }
+        });
+
+        document.write("Numeros entre 10 e 50: " + cont);
+    </script>
+
+</body>
+
+</html>

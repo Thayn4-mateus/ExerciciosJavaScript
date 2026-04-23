@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 11</title>
+</head>
+
+<body>
+    <!-- 11) Escreva um programa que leia 10 números inteiros e exiba a soma dos valores positivos e a soma dos valores negativos. -->
+    <h1>Soma positivos e negativos</h1>
+
+    <script>
+        const numeros = []
+
+        for (let i = 1; i <= 5; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+
+        let somaP = 0;
+        let somaN = 0;
+
+        numeros.forEach(n => {
+            if (n > 0) {
+                somaP = somaP + n;
+            }
+            else {
+                somaN = somaN + n;
+            }
+        });
+
+        document.write("Soma positivos: " + somaP);
+        document.write("<br>"+"Soma negativos: " + somaN);
+
+    </script>
+
+</body>
+
+</html>

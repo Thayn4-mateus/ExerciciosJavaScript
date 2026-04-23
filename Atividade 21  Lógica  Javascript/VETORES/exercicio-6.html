@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores 6</title>
+</head>
+
+<body>
+    <!-- 06) Crie um programa que leia 10 números inteiros e exiba-os em ordem crescente. -->
+
+    <h1>Ordem crescente</h1>
+
+    <script>
+        const numeros = [];
+
+        for (let i = 1; i <= 10; i++) {
+            const n = parseInt(prompt("Digite o " + i + "° número:"));
+            numeros.push(n);
+        }
+
+        numeros.sort((a, b) => a - b);
+
+        document.write(numeros.join(", "));
+    </script>
+</body>
+
+</html>
