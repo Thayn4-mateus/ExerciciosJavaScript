@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Até 20 Primeiros Numeros</title>
+</head>
+<body>
+    <!-- 25) Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci usando o loop "do-while". -->
+
+    <h1>Fibonacci Até 20 Primeiros Numeros</h1>
+
+    <script>
+        let n1 = 0;
+        let n2 = 1;
+        let i = 1;
+
+        do{
+            document.write(n1 + ", ");
+
+            let soma = n1 + n2;
+            n1 = n2;
+            n2 = soma;
+            i++;
+            
+        }while(i <= 20);
+    </script>
+
+
+    
+</body>
+</html>

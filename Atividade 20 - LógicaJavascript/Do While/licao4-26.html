@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos numeros pares</title>
+</head>
+<body>
+
+    <h1>Soma dos numeros pares</h1>
+
+    <script>
+        let num = parseInt(prompt("Digite um número:"));
+        let soma = 0;
+        let con = 2;
+
+        do{
+            con += 2
+            soma = soma + con;
+
+        }while(con <= num);
+
+        document.write("Soma dos pares: " + soma);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Primos</title>
+</head>
+<body>
+    <h1>Numeros primos</h1>
+
+    <script>
+        let n= parseInt(prompt("Digite um numero: "));
+
+        let numI= 1;
+        let div= 0;
+
+        while(numI<=n){
+            if (n % numI == 0) {
+                div++
+            }
+            numI++;
+
+        }
+
+        if(div == 2){
+            document.write("O numero "+ n +" é primo")
+        }else(
+            document.write("O numero "+ n +" não é primo")
+        )
+    </script>
+    
+</body>
+</html>

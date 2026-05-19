@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitos Separados</title>
+</head>
+
+<body>
+    <h1>Digitos Separados</h1>
+
+    <script>
+        for (let num = parseInt(prompt("Digite um número:")); num > 0; num = parseInt(num / 10)) {
+            let digito = num % 10;
+
+            document.write(digito + " ,");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media da idade</title>
+</head>
+<body>
+    <h1>Media da idade</h1>
+
+    <script>
+        let somaIdades = 0;
+let contador = 0;
+let nome;
+
+do {
+    nome = prompt("Digite um nome (ou 'fim' para parar):");
+
+    if (nome.toLowerCase() !== "fim") {
+        let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+        somaIdades = somaIdades + idade;
+        contador++;
+    }
+
+} while (nome.toLowerCase() !== "fim");
+
+let media = somaIdades / contador;
+document.write("Média das " + contador + " idades: " + media.toFixed(2));
+    </script>
+    
+</body>
+</html>

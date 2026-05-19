@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisores de numero inteiro</title>
+</head>
+<body>
+
+    <h1>Divisores de numero inteiro</h1>
+
+    <script>
+        let n= parseInt(prompt("Digite um numero: "));
+        let div= 1;
+
+        do{
+            div++
+        if (n % div == 0) {
+            document.write(div + "<br>");
+            }
+        }while(div<=n);
+    </script>
+    
+</body>
+</html>
